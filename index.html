@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./style.css" />
+
+
+  </head>
+  <body>
+
+<p>Enter image URL below:</p>
+
+<!-- Input so we can change the name attribute of our custom element -->
+
+<!-- Our custom element -->
+<div>
+<input type="text" placeholder="image source" id="image" />
+<input type="text" placeholder="description" id="description" />
+</div>
+<br>
+<div>
+<user-info src="https://imgs.search.brave.com/XWhGHRGH7NWT1Z-4gaaTMKMpepS_MqxfTANQprwf-F4/rs:fit:1200:1200:1/g:ce/aHR0cDovL2dldHdh/bGxwYXBlcnMuY29t/L3dhbGxwYXBlci9m/dWxsLzMvMC82LzU4/MzM3OC5qcGc" name="Image" id="image-source" description="Jake reading a book">     
+</user-info>
+</div>
+
+<!-- The template for our custom element -->
+<template id="SUPERAWESOME">
+  <style>
+    p {
+      font-weight: bold;
+    }
+
+    span {
+      color: red;
+    }
+    img {
+      width: 200px;
+    }
+  </style>
+  <img />
+  
+  <p>Description: <span id="description"></span></p>
+</template>
+     <br>
+      <title>IndexedDB</title>
+
+      <form data-id="comment-form">
+        <label for="name" >Name:</label>
+        <input data-input="name" required ></input>
+        <br>
+        <br>
+        <label for="Email">Email:</label>
+        <input data-input="email"></input><br>
+        <br>
+        <br>
+        <label for="Comment">Comment:</label>
+        <textarea data-input="comment" required></textarea> <br>
+
+
+        <br>
+        <br>
+       <!-- <input type="checkbox" data-id="Ischeck"><label for="checkbox">I agree to the Terms of Service:</label> -->
+
+       <div>
+        <label for="terms_and_conditions">I agree to the Terms of Service:</label>
+        <input type="checkbox" id="terms_and_conditions" value="1" onclick="terms_changed(this)" />
+        </div>
+        <br>
+        <br>
+        <br>
+        <button type="button" data-action="add" disabled>Submits</button>
+
+      </form>
+      <ul data-id="comment-list"></ul>
+    </div>
+       <script src="./js/comment.js"></script>
+        <script src="./js/app.js"></script>
+         <script src="./js/index.js"></script>
+          <script src="./main.js"></script>
+
+
+
+  </body>
+</html>
